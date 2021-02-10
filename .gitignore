@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+CustomSecureTextBox-1.0-Source/
+SamplePlugin-2.20-Source/
