@@ -24,7 +24,8 @@ Press the SW Switch on ItsyBitsy: it will type in the password as an external ke
 	
 CircuitPython Code:
 
-``
+```
+
 import board
 import sys
 import time
@@ -62,4 +63,4 @@ while True:
         s = ""
     #i+=1
     time.sleep(.1)
-``
+```
