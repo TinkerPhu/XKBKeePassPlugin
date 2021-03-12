@@ -55,7 +55,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>XKBOptionsSettings.settings</DependentUpon>
     </Compile>
-    <Compile Include="StartStopThread.cs" />
     <Compile Include="ComPortFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XKBOptions.cs">

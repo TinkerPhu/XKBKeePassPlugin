@@ -17,8 +17,8 @@ namespace XPWKeePassPlugin.Tests
             var allComPortsToString = ComPortFinder.CollectAllComPortsToString(propsCollection);
             Console.Write(allComPortsToString);
 
-            Assert.True(propsCollection.Any(e=>e["PNPDeviceID"].ToString() == @"USB\VID_239A&PID_8052&MI_00\6&25CC7688&0&0000"));
-            Assert.NotNull(ComPortFinder.FindComPortWithPNPDeviceID(@"USB\VID_239A&PID_8052&MI_00\6&25CC7688&0&0000"));
+            Assert.True(propsCollection.Any(e=>e["PNPDeviceID"].ToString().StartsWith(@"USB\VID_239A&PID_8052&MI_00\6&")));
+            Assert.NotNull(ComPortFinder.FindComPortWithPNPDeviceID(@"USB\VID_239A&PID_8052&MI_00\6&"));
         }
     }
 }

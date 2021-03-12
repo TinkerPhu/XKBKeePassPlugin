@@ -96,6 +96,11 @@ namespace XKBKeePassPlugin
             this._deviceIdComboBox.Name = "_deviceIdComboBox";
             this._deviceIdComboBox.Size = new System.Drawing.Size(288, 21);
             this._deviceIdComboBox.TabIndex = 1;
+            this._deviceIdComboBox.SelectedIndexChanged += new System.EventHandler(this._deviceIdComboBox_SelectedIndexChanged);
+            // 
+            // _deviceCheckTimer
+            // 
+            this._deviceCheckTimer.Tick += new System.EventHandler(this._deviceCheckTimer_Tick);
             // 
             // label2
             // 
